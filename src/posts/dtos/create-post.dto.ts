@@ -70,4 +70,9 @@ export class CreatePostDto {
   @IsISO8601()
   @IsOptional()
   publishOn?: Date;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  author: string;
 }
