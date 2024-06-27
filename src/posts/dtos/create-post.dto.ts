@@ -75,4 +75,10 @@ export class CreatePostDto {
   @IsString()
   @IsNotEmpty()
   author: string;
+
+  @ApiProperty()
+  @IsArray()
+  @IsOptional()
+  @IsString({ each: true })
+  tags?: string[];
 }
