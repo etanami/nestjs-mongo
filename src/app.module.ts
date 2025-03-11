@@ -12,7 +12,8 @@ import { UsersModule } from './users/users.module';
     PostsModule,
     AuthModule,
     MongooseModule.forRoot(
-      'mongodb+srv://nestjs:4kRbli2h2k5F50tb@nestjs.dgq4bvd.mongodb.net/?retryWrites=true&w=majority&appName=nestjs',
+      'mongodb+srv://etanamiolatunji:CqgVNp9O5aWadwa4@nestjs.fpf2w.mongodb.net/',
+      { dbName: 'nestjs-blog' },
     ),
   ],
   controllers: [AppController],
