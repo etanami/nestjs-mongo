@@ -70,4 +70,9 @@ export class CreatePostDto {
   @IsString()
   @IsNotEmpty()
   author: User;
+
+  @ApiPropertyOptional()
+  @IsOptional()
+  @IsString({ each: true })
+  tags: string[];
 }
